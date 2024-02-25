@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-const Checkbox = () => {
+const Checkbox = ({ label, isChecked, onChange }) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <label>
+      <input
+        type="checkbox"
+        checked={isChecked}
+        onChange={onChange}
+      />
+      {label}
+    </label>
+  );
+};
 
-export default Checkbox
+export default Checkbox;

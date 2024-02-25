@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const BreadCrumb = () => {
+const Breadcrumb = ({ steps }) => {
   return (
-    <div>
-      
+    <div className="breadcrumb">
+      {steps.map((step, index) => (
+        <span key={index}>
+          {step}
+          {index < steps.length - 1 && <span> {'>'} </span>}
+        </span>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default BreadCrumb
+export default Breadcrumb;
