@@ -1,6 +1,6 @@
 import React from 'react';
-import './sidebar.css';
-import NavigationBar from './Navigationbar';
+import './styles/sidebar.css';
+import NavigationBar from '../K-O Components/Navigationbar';
 
 const Sidebar = ({links}) => {
   return (

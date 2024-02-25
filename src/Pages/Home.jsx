@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../Components/Header'
-import Sidebar from '../Components/Sidebar'
-import Card from '../Components/Card';
+import Header from '../Components/F-J Components/Header'
+import Sidebar from '../Components/P-T Components/Sidebar'
+import Card from '../Components/A-E Components/Card';
 
 const links = [
   { text: "Home", url: "/" },
@@ -21,9 +21,6 @@ const Home = () => {
     <div>
          <Header title="Komponent bibliotek"/>
          <Sidebar links={links}/>
-         <Card title="">
-
-         </Card>
     </div>
   )
 }

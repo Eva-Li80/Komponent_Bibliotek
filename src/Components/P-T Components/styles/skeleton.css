@@ -1,0 +1,21 @@
+.skeleton {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .skeleton-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+  
+  .skeleton-line {
+    width: 80%;
+    height: 12px;
+    background-color: #ddd;
+    margin-top: 8px;
+  }
+  

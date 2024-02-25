@@ -1,0 +1,21 @@
+.tool-container{
+    background-color: rgb(225, 227, 219);
+    width: 150px;
+    height: 145px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hoverBtn{
+    background-color: #982b2b;
+    padding: 10px;
+    color: whitesmoke;
+    margin-top: 20px;
+    cursor: pointer;
+}
