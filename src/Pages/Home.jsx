@@ -1,16 +1,15 @@
 import React from 'react'
 import Header from '../Components/F-J Components/Header'
 import Sidebar from '../Components/P-T Components/Sidebar'
-import Card from '../Components/A-E Components/Card';
 
 const links = [
   { text: "Home", url: "/" },
   { text: "About", url: "/about" },
-  { text: "A-E Components", url: "/a_to_e_components" },
-  { text: "F-J Components", url: "/f_to_j_components" },
-  { text: "K-O Components", url: "/k_to_o_components" },
-  { text: "P-T Components", url: "/p_to_t_components" },
-  { text: "U-Z Components", url: "/u_to_z_components" },
+  { text: "A-E Components", url: "/aepage" },
+  { text: "F-J Components", url: "/fjpage" },
+  { text: "K-O Components", url: "/kopage" },
+  { text: "P-T Components", url: "/ptpage" },
+  { text: "U-Z Components", url: "/uzpage" },
   { text: "Contact", url: "/contact" },
 ];
 

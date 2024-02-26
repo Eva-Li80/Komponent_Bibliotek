@@ -1,6 +1,6 @@
 import React from 'react'
 
-const U_to_Z_Comonents = () => {
+const UZPage = () => {
   return (
     <div>
       u-z
@@ -8,5 +8,5 @@ const U_to_Z_Comonents = () => {
   )
 }
 
-export default U_to_Z_Comonents
+export default UZPage
 

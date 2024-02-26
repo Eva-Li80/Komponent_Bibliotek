@@ -12,8 +12,10 @@ import Scrollbox from "../Components/P-T Components/Scrollbox";
 import Skeleton from "../Components/P-T Components/Skeleton";
 import Searchfield from "../Components/P-T Components/Searchfield";
 import { useState } from "react";
+import ProgressBar from "../Components/P-T Components/ProgressBar";
+import Picker from "../Components/P-T Components/Picker";
 
-const P_to_T_Components = () => {
+const PTPage = () => {
   //tabBar
   const tabs = [
     { title: "Tab 1", content: "Content of Tab 1" },
@@ -32,8 +34,21 @@ const P_to_T_Components = () => {
     setSearchResults(filteredResults);
   };
 
+    //picker
+    const options = ['Option 1', 'Option 2', 'Option 3'];
+    const [selectedOption, setSelectedOption] = useState(null);
+  
+    const handleSelect = (option) => {
+      setSelectedOption(option);
+    };
+  
+
   return (
     <div className="container">
+        <Card title="Picker"><Picker options={options} onSelect={handleSelect} /></Card>
+        <Card title="Progresbar">
+            <ProgressBar percent={50}/>
+        </Card>
       <Card title="Scrollbox">
         <Scrollbox height="200px">
           <p>
@@ -101,4 +116,4 @@ const P_to_T_Components = () => {
   );
 };
 
-export default P_to_T_Components;
+export default PTPage;

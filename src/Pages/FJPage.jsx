@@ -7,7 +7,7 @@ import HamburgerMenu from "../Components/F-J Components/HamburgerMenu";
 import Icon from "../Components/F-J Components/Icon";
 
 
-const F_to_J_Components = () => {
+const FJPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
@@ -36,4 +36,4 @@ const F_to_J_Components = () => {
   );
 };
 
-export default F_to_J_Components;
+export default FJPage;

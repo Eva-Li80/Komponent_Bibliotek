@@ -8,7 +8,7 @@ import Breadcrumb from '../Components/A-E Components/BreadCrumb'
 import Checkbox from '../Components/A-E Components/Checkbox'
 import DatePicker from '../Components/A-E Components/DatePicker'
 
-const A_to_E_Components = () => {
+const AEPage = () => {
   const [buttonContent, setButtonContent] = useState("Hejsan")
 
   const handleButton = () => {
@@ -70,4 +70,4 @@ const A_to_E_Components = () => {
   )
 }
 
-export default A_to_E_Components
+export default AEPage
