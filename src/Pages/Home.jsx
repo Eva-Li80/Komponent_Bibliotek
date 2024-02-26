@@ -1,27 +1,23 @@
-import React from 'react'
-import Header from '../Components/F-J Components/Header'
-import Sidebar from '../Components/P-T Components/Sidebar'
+import React from "react";
+import Header from "../Components/F-J Components/Header";
+import Sidebar from "../Components/P-T Components/Sidebar";
+import MovieBox from "../Components/K-O Components/MovieBox";
+import Card from "../Components/A-E Components/Card";
+import "./containermovies.css"
 
-const links = [
-  { text: "Home", url: "/" },
-  { text: "About", url: "/about" },
-  { text: "A-E Components", url: "/aepage" },
-  { text: "F-J Components", url: "/fjpage" },
-  { text: "K-O Components", url: "/kopage" },
-  { text: "P-T Components", url: "/ptpage" },
-  { text: "U-Z Components", url: "/uzpage" },
-  { text: "Contact", url: "/contact" },
-];
 
 const Home = () => {
-
-
   return (
     <div>
-         <Header title="Komponent bibliotek"/>
-         <Sidebar links={links}/>
+      <Header title="Komponent bibliotek" />
+      <Sidebar />
+      <div className="container-movies">
+        <Card title="Moviebox">
+          <MovieBox />
+        </Card>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

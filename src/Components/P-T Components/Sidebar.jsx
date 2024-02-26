@@ -2,11 +2,22 @@ import React from 'react';
 import './styles/sidebar.css';
 import NavigationBar from '../K-O Components/Navigationbar';
 
-const Sidebar = ({links}) => {
+const Sidebar = () => {
+  const links = [
+    { text: "Home", url: "/" },
+    { text: "About", url: "/about" },
+    { text: "A-E Components", url: "/aepage" },
+    { text: "F-J Components", url: "/fjpage" },
+    { text: "K-O Components", url: "/kopage" },
+    { text: "P-T Components", url: "/ptpage" },
+    { text: "U-Z Components", url: "/uzpage" },
+    { text: "Contact", url: "/contact" },
+  ];
+
   return (
     <div className="sidebar">
       <h2>"Sidebar"</h2>
-       <NavigationBar links={links}  />
+      <NavigationBar links={links} />
     </div>
   );
 };

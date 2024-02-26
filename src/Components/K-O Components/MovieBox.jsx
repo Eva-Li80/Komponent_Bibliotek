@@ -1,6 +1,7 @@
 import React from 'react'
-import data from"../movies.json";
+import data from"../../movies.json";
 import MovieTable from './MovieTable';
+import "./styles/movies.css"
 
 
 

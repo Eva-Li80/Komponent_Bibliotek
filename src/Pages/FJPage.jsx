@@ -5,7 +5,8 @@ import Form from "../Components/F-J Components/Form"
 import { useState } from "react";
 import HamburgerMenu from "../Components/F-J Components/HamburgerMenu";
 import Icon from "../Components/F-J Components/Icon";
-
+import Header from "../Components/F-J Components/Header";
+import Sidebar from "../Components/P-T Components/Sidebar";
 
 const FJPage = () => {
   const [name, setName] = useState("");
@@ -18,6 +19,10 @@ const FJPage = () => {
  }
 
   return (
+    <>
+      <Header title="Komponenter som börjar på bokstav F, G, H, I eller J"/>
+      <Sidebar/>
+   
     <div className="container">
       <Card title="Feed">
         <Feed />
@@ -33,6 +38,7 @@ const FJPage = () => {
         <Icon icon={<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5-10-5-10 5z" />} size={48} color="blue"/>
       </Card>
     </div>
+    </>
   );
 };
 

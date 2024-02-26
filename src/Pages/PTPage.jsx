@@ -14,7 +14,8 @@ import Searchfield from "../Components/P-T Components/Searchfield";
 import { useState } from "react";
 import ProgressBar from "../Components/P-T Components/ProgressBar";
 import Picker from "../Components/P-T Components/Picker";
-
+import Header from "../Components/F-J Components/Header";
+import Sidebar from "../Components/P-T Components/Sidebar";
 const PTPage = () => {
   //tabBar
   const tabs = [
@@ -44,6 +45,9 @@ const PTPage = () => {
   
 
   return (
+    <>
+    <Header title="Komponenter som börjar på bokstav P, Q, R, S eller T"/>
+      <Sidebar/>
     <div className="container">
         <Card title="Picker"><Picker options={options} onSelect={handleSelect} /></Card>
         <Card title="Progresbar">
@@ -113,6 +117,7 @@ const PTPage = () => {
         <ToolTip text="Detta är tooltip text" btntext="Hover over me" />
       </Card>
     </div>
+    </>
   );
 };
 
