@@ -48,7 +48,7 @@ const PTPage = () => {
     <>
     <Header title="Komponenter som börjar på bokstav P, Q, R, S eller T"/>
       <Sidebar/>
-    <div className="container">
+    <div className="containerett">
         <Card title="Picker"><Picker options={options} onSelect={handleSelect} /></Card>
         <Card title="Progresbar">
             <ProgressBar percent={50}/>

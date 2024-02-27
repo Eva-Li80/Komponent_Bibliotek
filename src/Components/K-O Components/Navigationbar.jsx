@@ -1,12 +1,12 @@
 import React from 'react'
 
-const NavigationBar = ({links}) => {
+const NavigationBar = ({links, className, classNamee}) => {
   return (
     <div>
       <nav>
-        <ul>
+        <ul className={className}>
         {links.map((link, index) => (
-          <li key={index}>
+          <li className={classNamee} key={index}>
             <a href={link.url}>{link.text}</a>
           </li>
         ))}

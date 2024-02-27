@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles/modal.css';
 
-const Modal = ({ onClose }) => {
+const Modal = ({ onClose, texth2, content }) => {
   return (
     <div>
       <div className="modal">
         <button className="open-button" onClick={onClose}>close</button>
-        <h2>Modalrubrik</h2>
-        <p>Här kan du lägga till innehåll som ska visas i modalen.</p>
+        <h2>{texth2}</h2>
+        <p>{content}</p>
       </div>
     </div>
   );

@@ -7,10 +7,11 @@ import FJPage from "./Pages/FJPage";
 import KOPage from "./Pages/KOPage";
 import PTPage from "./Pages/PTPage";
 import UZPage from "./Pages/UZPage";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
-    <>
+    < >
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,6 +21,7 @@ function App() {
           <Route path="/kopage" element={<KOPage />} />
           <Route path="/ptpage" element={<PTPage/>} />
           <Route path="/uzpage" element={<UZPage/>} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
       </Router>
     </>

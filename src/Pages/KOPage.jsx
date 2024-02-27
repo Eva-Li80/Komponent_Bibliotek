@@ -10,6 +10,7 @@ import Header from '../Components/F-J Components/Header'
 import Sidebar from '../Components/P-T Components/Sidebar'
 import data from "../animals.json"
 import List from '../Components/K-O Components/List'
+import MovieBox from '../Components/K-O Components/MovieBox'
 
 const KOPage = () => {
 
@@ -29,14 +30,14 @@ const KOPage = () => {
      <Header title="Komponenter som börjar på bokstav K, L, M, N eller O"/>
       <Sidebar/>
    
-    <div className='container'>
+    <div className='containerett'>
      <Card title="Kebab menu"><KebabMenu/></Card>
      <Card title="Loader"><Loader/></Card>
      <Card title="Menu"><Menu/></Card>
      <Card title="Modal">
       <button onClick={handleopen}>open</button>
-      {isModalOpen && <Modal onClose={() => setIsModalOpen(false)}/>}</Card>
-   
+      {isModalOpen && <Modal onClose={() => setIsModalOpen(false)} texth2="Modal" content="Här kan du lägga till innehåll som ska visas i modalen."/>}</Card>
+     <MovieBox/>
      <Card title="Notification"><Notification message="Hej notification"/></Card>
      <Card><List data={animals}/></Card>
     </div>

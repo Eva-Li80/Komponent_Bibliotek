@@ -23,7 +23,7 @@ const FJPage = () => {
       <Header title="Komponenter som börjar på bokstav F, G, H, I eller J"/>
       <Sidebar/>
    
-    <div className="container">
+    <div className="containerett">
       <Card title="Feed">
         <Feed />
       </Card>

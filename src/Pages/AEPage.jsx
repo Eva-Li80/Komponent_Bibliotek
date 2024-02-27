@@ -61,7 +61,7 @@ const AEPage = () => {
     <>
       <Header title="Komponenter som börjar på bokstav A, B, C, D eller E"/>
       <Sidebar/>
-      <div className="container">
+      <div className="containerett">
         <Card title="Accordion">
           <AccordionUse />
         </Card>

@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   margin-left: 200px;
-  color: rgb(52, 83, 79);
+  color:whitesmoke
 }
 
 .list-ul {
@@ -17,5 +17,8 @@
 }
 
 .list-li h2{
-    text-decoration: underline rgb(248, 204, 228);
+
+color:wheat;
+text-decoration: underline 1px;
+
 }

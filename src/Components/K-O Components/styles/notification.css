@@ -9,7 +9,7 @@
 .title-note{
     margin-bottom: 20px;
     font-size: 40px;
-    color: rgb(113, 111, 112);
+    color:white;
     font-weight: bold;
   
 }
@@ -17,7 +17,7 @@
 .message-note{
     /* background-color:rgb(248, 204, 228); */
     font-size: 25px;
-    color: rgb(183, 20, 102);
+    color:wheat;
     padding: 20px 20px;
     /* border: 2px solid rgb(184, 181, 181);
     box-shadow: rgb(141, 148, 147) 0 0 20px 0; */
