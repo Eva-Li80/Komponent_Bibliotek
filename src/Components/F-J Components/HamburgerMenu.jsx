@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './hamburgermenu.css'; // Styling för hamburgermenyn
+import './styles/hamburgermenu.css'; // Styling för hamburgermenyn
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

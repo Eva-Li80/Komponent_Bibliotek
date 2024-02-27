@@ -8,6 +8,9 @@ import { useState } from 'react'
 import Notification from '../Components/K-O Components/Notification'
 import Header from '../Components/F-J Components/Header'
 import Sidebar from '../Components/P-T Components/Sidebar'
+import data from "../animals.json"
+import List from '../Components/K-O Components/List'
+
 const KOPage = () => {
 
   
@@ -17,6 +20,9 @@ const KOPage = () => {
   const handleopen = () => {
     setIsModalOpen(true)
   }
+
+  const animals = data?.animals ?? []
+  console.log(animals)
   
   return (
     <>
@@ -32,6 +38,7 @@ const KOPage = () => {
       {isModalOpen && <Modal onClose={() => setIsModalOpen(false)}/>}</Card>
    
      <Card title="Notification"><Notification message="Hej notification"/></Card>
+     <Card><List data={animals}/></Card>
     </div>
     </>
   )

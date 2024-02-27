@@ -1,0 +1,27 @@
+ .company-container{
+    background-color:  rgb(107, 137, 133);
+ 
+}
+
+.drop{
+
+    font-size: 35px;
+}
+
+.company, .backstory{
+    padding: 50px;
+    margin: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+.backstory{
+    margin: 0 250px;
+}
+
+
+ .company h2{
+    font-size: 30px;
+    margin: 10px;
+}
+

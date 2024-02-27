@@ -1,0 +1,17 @@
+{
+    "animals":[
+        {
+            "name":"katt"
+            
+        },
+        {
+            "name":"hund"
+           
+        },
+        {
+            "name":"kanin"
+          
+           
+        }
+    ]
+}

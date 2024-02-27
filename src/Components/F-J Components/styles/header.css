@@ -1,7 +1,6 @@
 .header-container {
-    height: 75px;
+    height: 130px;
     width: 100%;
-    background-color: grey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,14 +8,19 @@
     z-index: 1;
     margin-left: 100px;
     top: 0;
+    background: linear-gradient(to right,gray,rgb(175, 168, 169),rgb(165, 163, 163),gray, rgb(195, 181, 183), rgb(202, 201, 201));
+    
   }
   
   .rubrik {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    color: white;
+    padding: 10px 20px;
+    color: rgb(22, 41, 38);
+    border: 2px solid rgb(150, 149, 149);
     text-align: center;
     letter-spacing: 2px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: rgb(250, 239, 244) 0 0 20px 0px;
   }
   

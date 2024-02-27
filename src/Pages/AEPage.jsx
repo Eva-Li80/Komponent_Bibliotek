@@ -7,11 +7,14 @@ import BentoMenu from "../Components/A-E Components/BentoMenu";
 import Breadcrumb from "../Components/A-E Components/BreadCrumb";
 import Checkbox from "../Components/A-E Components/Checkbox";
 import DatePicker from "../Components/A-E Components/DatePicker";
-import DownMenu from "../Components/A-E Components/DownMenu";
-import DropDownButton from "../Components/A-E Components/DropDownButton";
+import DownMenu from "../Components/A-E Components/DownMenuButton";
+
 import Header from "../Components/F-J Components/Header";
 import Sidebar from "../Components/P-T Components/Sidebar";
+import DropDownBox from "../Components/A-E Components/DropDownBox";
 
+import DetailsDropDownBox from "../Components/A-E Components/DetailsDropDownBox";
+import DropDown from "../Components/A-E Components/DropDown";
 const AEPage = () => {
   const [buttonContent, setButtonContent] = useState("Hejsan");
 
@@ -45,6 +48,14 @@ const AEPage = () => {
   const handleSelect = (option) => {
     setSelectedOption(option);
   };
+
+
+  const [selec, setSelec] = useState("")
+
+  const handleChangee = (e) => {
+    setSelec(e.target.value)
+  }
+
 
   return (
     <>
@@ -84,10 +95,12 @@ const AEPage = () => {
           {selectedOption && <p>Selected option: {selectedOption}</p>}
         </Card>
         <Card title="DropDown button">
-          <p>Selected Option: {selectedOption}</p>
-          <DropDownButton options={options} onSelect={handleSelect} />
+         <DropDownBox/>
         </Card>
-        <Card title=""></Card>
+        <Card title=""><DetailsDropDownBox/></Card>
+        <Card >{selec}
+        <DropDown handleChanges={handleChangee} valuetvå={steps} valuetre="detta är value tre C"/>
+        </Card>
       </div>
     </>
   );

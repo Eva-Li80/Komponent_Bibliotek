@@ -1,0 +1,30 @@
+.worker{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    z-index: 1;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 200px;
+    background-color: rgb(252, 247, 247);;
+    border: 5px solid rgb(184, 181, 181);
+    box-shadow: rgb(122, 116, 119) 0 0 50px 0;
+    height: 100vh;
+}
+
+.worker h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color:gray;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.selected{
+    margin-top: 10px;
+}
+
+.about{
+    padding: 20px;
+    columns: black;
+}

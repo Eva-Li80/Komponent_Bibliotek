@@ -1,0 +1,25 @@
+.notification{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.title-note{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(113, 111, 112);
+    font-weight: bold;
+  
+}
+
+.message-note{
+    /* background-color:rgb(248, 204, 228); */
+    font-size: 25px;
+    color: rgb(183, 20, 102);
+    padding: 20px 20px;
+    /* border: 2px solid rgb(184, 181, 181);
+    box-shadow: rgb(141, 148, 147) 0 0 20px 0; */
+    border-radius: 5px;
+}
